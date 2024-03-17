@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+    <h1>Welcome to the Weather Web</h1>
+    <h2>Weather of <span id="changable">Indore</span></h2>
+
+    <button id="dark">Dark Mode</button>
+
+    <div class="container">
+        <div class="box" id="temperatureBox">
+            <h2>Temperature</h2>
+            <p id="temp"></p>
+            <p id="minTemp"></p>
+            <p id="maxTemp"></p>
+        </div>
+        <div class="box" id="humidityBox">
+            <h2>Humidity</h2>
+            <p id="humidity"></p>
+            <p id="feelsLike"></p>
+        </div>
+        <div class="box" id="windBox">
+            <h2>Wind Info</h2>
+            <p id="windSpeed"></p>
+            <p id="windDegrees"></p>
+        </div>
+
+        <div class="box" id="sun">
+            <h2>Sunrise Info</h2>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+        </div>
+    </div>
+
+    <form id="searchForm">
+        <input id="cityInput" type="text" placeholder="Enter city">
+        <button type="submit" id="btn">Search</button>
+    </form>
+
+    <script src="weather.js"></script>
+</body>
+</html>
